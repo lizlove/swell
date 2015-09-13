@@ -1,0 +1,141 @@
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box; 
+}
+
+#wrapper {
+  max-width: 1024
+  margin: 5%;
+}
+
+body {
+  font: 1em/1.5 "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.875em; 
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2em; 
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.2em; 
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.1em; 
+  font-weight: 300;
+}
+
+ul,
+li {
+  padding: 20px 10px;
+  display: inline;
+
+}
+
+nav {
+  color: white;
+  background-color: #58575c;
+  font-size: .75em; /* 12px/16px */
+  font-weight 300;
+}
+
+section {
+
+}
+
+footer {
+  text-align: center
+}
+
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9bdbb6;
+}
+
+a:active {
+  color: white;
+}
+
+/* Main Styles --------------------- */
+
+.banner {
+  text-align: left;
+  background-color:rgba(255, 255, 255, .4);
+  padding: 5%;
+  width: 50%;
+}
+
+#grad {
+  background: rgba(216,205,120,1);
+  background: -moz-linear-gradient(top, rgba(216,205,120,1) 0%, rgba(155,219,181,1) 98%, rgba(155,219,181,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(216,205,120,1)), color-stop(98%, rgba(155,219,181,1)), color-stop(100%, rgba(155,219,181,1)));
+  background: -webkit-linear-gradient(top, rgba(216,205,120,1) 0%, rgba(155,219,181,1) 98%, rgba(155,219,181,1) 100%);
+  background: -o-linear-gradient(top, rgba(216,205,120,1) 0%, rgba(155,219,181,1) 98%, rgba(155,219,181,1) 100%);
+  background: -ms-linear-gradient(top, rgba(216,205,120,1) 0%, rgba(155,219,181,1) 98%, rgba(155,219,181,1) 100%);
+  background: linear-gradient(to bottom, rgba(216,205,120,1) 0%, rgba(155,219,181,1) 98%, rgba(155,219,181,1) 100%);
+}
+
+.button {
+  background-color: #4990e2;
+  padding: 10px 40px;
+  text-align: center;
+  color:white;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.example-task {
+
+
+}
+
+.carousel {
+
+}
+
+.credit {
+
+
+}
+
+/* Layout Styles --------------------- */
+
+#brand {
+  color: white;
+  font-size: 2em; /* 26px/16px */
+  font-weight: 600;
+  text-align: left;
+  padding: 5% ;
+}
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+
+
+
+
+
+
+
+
+
+
+

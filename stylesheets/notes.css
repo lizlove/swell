@@ -34,11 +34,19 @@ h4 {
 
 }
 
-
 li {
   display: inline-block;
   padding: 0 12px;
-  margin: 20px 0;
+}
+
+button {
+  color: white;
+  background-color: #4990e2;
+}
+
+footer {
+
+
 }
 
 
@@ -58,68 +66,40 @@ a:hover {
 .navbar {
   background-color: #58575c;
   color: white;
-  font-size: ;
+  font: "Montserrat", Arial, sans-serif;
+  font-size: .75em; /* 12px/16px */
+  font-weight 300;
+  margin: 0px;
+  padding: ;
 }
 
 .brand {
   color: white;
-  font-size: 1.625rem; /* 26px/16px */
-}
-
-.intro {
-  font-size: 1.25em; /* 20px/16px */
-  line-height: 1.6;  
-}
-
-.banner-text {
-  text-align: left;
+  font-size: 1.625em; /* 26px/16px */
+  font-weight: 600;
 }
 
 .banner {
+  text-align: left;
+}
+
+.banner-text {
   padding-top: 25px;
   padding-bottom: 95px;
 }
 
-.secondary-content {
+.example-task {
   padding-top: 80px;
   padding-bottom: 70px;
   border-bottom: 2px solid #dfe2e6;
 }
 
-.callout {
+.carousel {
   font-size: 1.25em;
   border-bottom: 3px solid;
   padding: 0 9px 3px;
-  margin-top: 20px;
+  margin-top: 0px;
   display: inline-block;
 }
 
-.main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-bottom: 10px solid #ffa949;
-}
-
-.t-border {
-  border-top: 2px solid #dfe2e6;
-}
-
 /* Layout Styles ------------------ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
