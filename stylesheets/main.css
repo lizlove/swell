@@ -1,88 +1,67 @@
-/* Base Styles -------------------- */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Montserrat:400,700);
 
-* {
-  box-sizing: border-box; 
+/*************************
+Base Styles
+*************************/
+
+html {
+  color: #373e48;
+  font-size: 1em;
+  line-height: 1.4;
+  box-sizing: border-box;
 }
 
-#wrapper {
-  max-width: 1024
-  margin: 5%;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
-  font: 1em/1.5 "Open Sans", Arial, sans-serif;
-  font-weight: 300;
-  margin: 0;
-}
-
-h1 {
-  font-size: 2.875em; 
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 2em; 
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 1.2em; 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
   font-weight: 400;
 }
 
-h4 {
-  font-size: 1.1em; 
-  font-weight: 300;
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
 }
 
-ul,
-li {
-  padding: 20px 10px;
-  display: inline;
-
+.header-container {
+    background-color: #58575c;
 }
 
-nav {
-  color: white;
-  background-color: #58575c;
-  font-size: .75em; /* 12px/16px */
-  font-weight 300;
+.title {
+    color: white;
+    font-weight: 400;
 }
 
-section {
-  margin-bottom: 5%
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-footer {
-  text-align: center
-}
-
-
-/* Pseudo-classes ------------------ */
-
-a:link {
-  color: white;
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0px 0;
+  text-align: center;
   text-decoration: none;
-}
-
-a:hover {
-  color: #9bdbb6;
-}
-
-a:active {
+  font-weight: 300;
   color: white;
 }
 
-/* Main Styles --------------------- */
-
-.banner {
-  text-align: left;
-  background-color:rgba(255, 255, 255, .4);
-  padding: 5%;
-  width: 50%;
+nav a:hover,
+nav a:visited {
+  color: white;
 }
 
-#grad {
+nav a:hover {
+  text-decoration: underline;
+}
+
+.main-container {
   background: rgba(216,205,120,1);
   background: -moz-linear-gradient(top, rgba(216,205,120,1) 0%, rgba(155,219,181,1) 98%, rgba(155,219,181,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(216,205,120,1)), color-stop(98%, rgba(155,219,181,1)), color-stop(100%, rgba(155,219,181,1)));
@@ -90,52 +69,119 @@ a:active {
   background: -o-linear-gradient(top, rgba(216,205,120,1) 0%, rgba(155,219,181,1) 98%, rgba(155,219,181,1) 100%);
   background: -ms-linear-gradient(top, rgba(216,205,120,1) 0%, rgba(155,219,181,1) 98%, rgba(155,219,181,1) 100%);
   background: linear-gradient(to bottom, rgba(216,205,120,1) 0%, rgba(155,219,181,1) 98%, rgba(155,219,181,1) 100%);
-}
-
-.button {
-  background-color: #4990e2;
-  padding: 10px 40px;
-  text-align: center;
-  color:white;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
-.example-task {
-
 
 }
-
-.carousel {
-
+.main article {
+  padding: 8% 0;
 }
 
-.credit {
-
-
-}
-
-/* Layout Styles --------------------- */
-
-#brand {
-  color: white;
-  font-size: 2em; /* 26px/16px */
+.main article h1 {
+  font-size: 2.4em;
   font-weight: 600;
-  text-align: left;
-  padding: 5% ;
 }
 
-/* --------------------------
-  Media Queries
---------------------------- */
+.btn-default {
+  margin: 10px 5px;
+  display: inline-block;
+  padding: 15px 70px;
+  text-transform: uppercase;
+  background-color: #4990e2;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.carousel-container header {
+  padding: 20px 0;
+}
+
+.carousel-container .wrapper h3{
+  color: #373e48;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: .7;
+}
 
 
+/*************************
+Media Queries
+*************************/
+
+@media only screen and (min-width: 480px) {
+
+  nav a {
+    float: right;
+    width: 15%;
+    padding: 5px 1%;
+    margin-bottom: 0;
+  }
+
+  nav li:first-child a {
+    margin-left: 0;
+  }
+
+  nav li:last-child a {
+    margin-right: 0;
+  }
+
+}
+
+@media only screen and (min-width: 768px),
+       only screen and (min-width: 700px) and (orientation: landscape) {
+
+  .title {
+    float: left;
+    font-size: 1.4em;
+  }
+
+  nav {
+    float: right;
+    width: 60%;
+  }
+
+  nav a {
+    padding: 15px 1%;
+  }
+
+  .main article {
+    float: left;
+    width: 50%;
+  }
+  
+}
+
+@media only screen and (min-width: 1140px) {
+
+  .wrapper {
+    width: 1026px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  nav a {
+    padding: 25px 1%;
+  }
+  
+}
 
 
+/*************************
+Clearfix
+*************************/
 
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
 
+.clearfix:after {
+  clear: both;
+}
 
-
-
-
-
+.clearfix {
+  *zoom: 1;
+}
