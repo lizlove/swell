@@ -1,8 +1,13 @@
 $(document).ready(function() {
  
   $("#owl-container").owlCarousel({
-  	items : 4, 
-    jsonPath : 'http://builds.tryswell.com/mock/items.json',
+  	items : 4,
+  	navigation: true,
+  	navigationText: [
+      "<i class='icon-chevron-left icon-white'><</i>",
+      "<i class='icon-chevron-right icon-white'>></i>"
+      ],
+  	jsonPath : 'http://builds.tryswell.com/mock/items.json',
     jsonSuccess : customDataSuccess
   });
  
@@ -18,15 +23,8 @@ $(document).ready(function() {
        content += "<div class='item'><img src=\"" +img+ "\" alt=\"" +alt+ "\"><h3>Tip" + tip_id + "</h3><p>" + copy + "</p></div>"
     }
     $("#owl-container").html(content);
-    console.log(content);
   }
 
-  $(".next").click(function(){
-    owl.trigger('owl.next');
-  })
-  $(".prev").click(function(){
-    owl.trigger('owl.prev');
-  })
  
 });
 
