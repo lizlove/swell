@@ -20,9 +20,10 @@ $(document).ready(function() {
        var tip_id = data["items"][i].id;
        var copy = data["items"][i].description;
  
-       content += "<div class='item'><img src=\"" +img+ "\" alt=\"" +alt+ "\"><h3>Tip" + tip_id + "</h3><p>" + copy + "</p></div>"
+       content += "<div class='item'><img src=\"" +img+ "\" alt=\"" +alt+ "\"><h3>Tip " + tip_id + "</h3><p>" + copy + "</p></div>"
     }
     $("#owl-container").html(content);
+    console.log(content);
   }
 
  

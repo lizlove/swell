@@ -100,12 +100,25 @@ Owl Carousel
 #owl-container .item{
   padding: 30px 0px;
   margin: 10px;
-  color: #FFF;
-  max-height: 300px;
+  max-height: 320px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   text-align: center;
+}
+#owl-container .item h3 {
+  color: #373e48;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: .7;
+  text-align: left;
+}
+#owl-container .item p {
+  color: #373e48;
+  font-size: .7em;
+  font-weight: 300;
+  line-height: 1;
+  text-align: left;
 }
 #owl-container .item img{
   display: block;
@@ -157,6 +170,19 @@ Owl Carousel
 .owl-theme .owl-controls .owl-buttons .owl-next{
   right: -45px;
   top: 150px;
+}
+i {
+  display: inline-block;
+  font-style: normal;
+  position: relative;
+}
+i.arrow {
+    top: 2pt;
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 0.2em solid black;
+    border-top: 0.2em solid black;
+    transform: rotate(45deg);
 }
 
 /*************************
