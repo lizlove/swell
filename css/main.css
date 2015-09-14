@@ -1,50 +1,38 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Montserrat:400,700);
-
+@import url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 /*************************
 Base Styles
 *************************/
-
 html {
   color: #373e48;
   font-size: 1em;
   line-height: 1.4;
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   font-weight: 400;
 }
-
-canvas {
-  background: gray;
-}
-
 .wrapper {
   width: 100%
 }
-
 .header-container {
     background-color: #58575c;
 }
-
 .title {
     color: white;
     font-weight: 400;
 }
-
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-
 nav a {
   display: block;
   margin-bottom: 10px;
@@ -54,16 +42,13 @@ nav a {
   font-weight: 300;
   color: white;
 }
-
 nav a:hover,
 nav a:visited {
   color: white;
 }
-
 nav a:hover {
   text-decoration: underline;
 }
-
 .main-container {
   background: rgba(216,205,120,1);
   background: -moz-linear-gradient(top, rgba(216,205,120,1) 0%, rgba(155,219,181,1) 98%, rgba(155,219,181,1) 100%);
@@ -72,17 +57,14 @@ nav a:hover {
   background: -o-linear-gradient(top, rgba(216,205,120,1) 0%, rgba(155,219,181,1) 98%, rgba(155,219,181,1) 100%);
   background: -ms-linear-gradient(top, rgba(216,205,120,1) 0%, rgba(155,219,181,1) 98%, rgba(155,219,181,1) 100%);
   background: linear-gradient(to bottom, rgba(216,205,120,1) 0%, rgba(155,219,181,1) 98%, rgba(155,219,181,1) 100%);
-
 }
 .main article {
   padding: 8% 0;
 }
-
 .main article h1 {
   font-size: 2.4em;
   font-weight: 600;
 }
-
 .btn-default {
   margin: 10px 5px;
   display: inline-block;
@@ -93,11 +75,9 @@ nav a:hover {
   border: none;
   border-radius: 3px;
 }
-
 .carousel-container header {
   padding: 20px 0;
 }
-
 .carousel-container .wrapper h3 {
   color: #373e48;
   font-size: 1em;
@@ -108,13 +88,11 @@ nav a:hover {
 /*************************
 Owl Carousel
 *************************/
-
-#owl-demo {
+#owl-container {
   width: 90%;
   margin: auto;
 }
-
-#owl-demo .item{
+#owl-container .item{
   padding: 30px 0px;
   margin: 10px;
   color: #FFF;
@@ -124,17 +102,15 @@ Owl Carousel
   border-radius: 3px;
   text-align: center;
 }
-
-#owl-demo .item img{
+#owl-container .item img{
   display: block;
   width: 100%;
-  height: 80%;
+  height: 60%;
 }
-
 .customNavigation{
-  text-align: center;
+  margin: 5%;
+  text-align: left;
 }
-
 .customNavigation a{
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -147,81 +123,89 @@ Owl Carousel
 /*************************
 Media Queries
 *************************/
-
 @media only screen and (min-width: 480px) {
-
   nav a {
     float: right;
     width: 12%;
     padding: 5px 1%;
     margin-bottom: 0;
   }
-
   nav li:first-child a {
     margin-left: 0;
   }
-
   nav li:last-child a {
     margin-right: 0;
   }
-
 }
-
-@media only screen and (min-width: 768px),
-       only screen and (min-width: 700px) and (orientation: landscape) {
-
+@media only screen and (min-width: 768px), only screen and (min-width: 700px) and (orientation: landscape) {
   .title {
     float: left;
     font-size: 1.4em;
   }
-
   nav {
     float: right;
     width: 60%;
   }
-
   nav a {
     padding: 15px 1%;
   }
-
   .main article {
     float: left;
     width: 50%;
   }
-  
 }
-
 @media only screen and (min-width: 1140px) {
-
   .wrapper {
     width: 1026px;
     margin: 0 auto;
   }
-
   .title {
     font-size: 2em;
   }
-
   nav a {
     padding: 25px 1%;
   }
-  
 }
 
 /*************************
 Clearfix
 *************************/
-
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
-
 .clearfix:after {
   clear: both;
 }
-
 .clearfix {
   *zoom: 1;
+}
+
+/*************************
+Glyphicons
+*************************/
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-circle-arrow-right:before {
+  content: "\e131";
+}
+.glyphicon-circle-arrow-left:before {
+  content: "\e132";
 }

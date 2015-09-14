@@ -1,6 +1,6 @@
 $(document).ready(function() {
  
-  $("#owl-demo").owlCarousel({
+  $("#owl-container").owlCarousel({
   	items : 4, 
     jsonPath : 'http://builds.tryswell.com/mock/items.json',
     jsonSuccess : customDataSuccess
@@ -17,7 +17,7 @@ $(document).ready(function() {
  
        content += "<div class='item'><img src=\"" +img+ "\" alt=\"" +alt+ "\"><h3>Tip" + tip_id + "</h3><p>" + copy + "</p></div>"
     }
-    $("#owl-demo").html(content);
+    $("#owl-container").html(content);
     console.log(content);
   }
 
