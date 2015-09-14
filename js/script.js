@@ -1,56 +1,31 @@
-// $(document).ready(function() {
-// 	// Get images from mock API and append to image carousel
-// 	var swellAPI = 'http://builds.tryswell.com/mock/items.json';
-// 	$.getJSON(swellAPI, function(result){
-// 		result.items.forEach(function(shoe){
-// 			var id_number = shoe.id;
-// 			var url = shoe.images[0]['url'];
-// 			var image = "<div><img src='" + url + "' alt='item'></div>";
-// 			var title = shoe.heading;
-// 			var copy = shoe.description;
-// 			console.log(shoe);
-// 			console.log(image);
-// 			$('.slider').append(image)
-// 		});
-// 	}); 
-// }); 
-
 $(document).ready(function() {
-	// Build image carousel with responsive structure
-		$('.slider').slick({
-		dots: true,
-		arrows: true,
-		infinite: true,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 1,
-					infinite: true,
-					dots: true
-				}
-			},
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-		]
-	}); 
-});
-	 
+ 
+  $("#owl-container").owlCarousel({
+  	items : 4,
+  	navigation: true,
+  	navigationText: [
+      "<i class='icon-chevron-left icon-white'><</i>",
+      "<i class='icon-chevron-right icon-white'>></i>"
+      ],
+  	jsonPath : 'http://builds.tryswell.com/mock/items.json',
+    jsonSuccess : customDataSuccess
+  });
+ 
+  function customDataSuccess(data){
+    var content = "";
+    for(var i in data["items"]){
+       
+       var img = data["items"][i]["images"][0]['url'];
+       var alt = data["items"][i].heading;
+       var tip_id = data["items"][i].id;
+       var copy = data["items"][i].description;
+ 
+       content += "<div class='item'><img src=\"" +img+ "\" alt=\"" +alt+ "\"><h3>Tip" + tip_id + "</h3><p>" + copy + "</p></div>"
+    }
+    $("#owl-container").html(content);
+  }
 
+ 
+});
 
 
