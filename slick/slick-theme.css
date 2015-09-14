@@ -34,19 +34,19 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: gray;
     border: none;
     outline: none;
-    background: transparent;
+    background: gray;
 }
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    color: gray;
     outline: none;
-    background: transparent;
+    background: gray;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,

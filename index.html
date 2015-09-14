@@ -1,53 +1,88 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="icon" type="image/png" href="favicon.ico" />
-        <title>Swell | Free expert help and tips for your to-do list</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="favicon.ico" />
+		<title>Swell | Free expert help and tips for your to-do list</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Fonts from Google Fonts -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css" />
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
+		<!-- Fonts from Google Fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <h1 class="title">swell</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	</head>
+<body>
 
-        <div class="main-container">
-                <div class="main wrapper clearfix">
+	<!-- Navbar -->
+	<section class="header-container">
+		<header class="wrapper clearfix">
+			<h1 class="title">swell</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+		</header>
+	</section>
 
-                    <article>
-                        <header>
-                            <h1>Introducing Swell</h1>
-                            <p>The list that works for you</p>
-                        </header>
-                        <button class="btn-default">Download App</button>
-                    </article>
+	<!-- Banner -->
+	<section class="main-container">
+		<div class="main wrapper clearfix">
+			<article>
+				<header>
+				  <h1>Introducing Swell</h1>
+				  <p>The list that works for you</p>
+				</header>
+				<button class="btn-default">Download App</button>
+			</article>
+		</div> 
+	</section> 
 
-                </div> <!-- #main -->
-        </div> <!-- #main-container -->
+	<!-- Carousel -->
+	<section class="carousel-container">
+		<header class="wrapper">
+			<h3>Example Task:</h3>
+			<h3>Buy a housewarming gift</h3>
+		</header>
+		<div class="slider">
+			<div class="slide">
+			  <img src="img/sharkdog.jpg" alt="" class="item" />
+			  <h3>Tip 1</h3>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="slide">
+				<img src="img/sharkdog.jpg" alt="" class="item" />
+				<h3>Tip 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+			</div>
+			<div class="slide">
+				<img src="img/sharkdog.jpg" alt="" class="item" />
+				<h3>Tip 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+			</div>
+			<div class="slide">
+				<img src="img/sharkdog.jpg" alt="" class="item" />
+				<h3>Tip 4</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+			</div>
+		</div>      
+	</section>
 
-        <div class="carousel-container">
-            <header class="wrapper">
-                <h3>Example Task:</h3>
-                <h3>Buy a housewarming gift</h3>
-            </header>
-        </div>
-      
-    </body>
+	<!-- swell JS -->
+	<script src="js/script.js"></script>
+	<!-- slick JS -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+
+</body>
 </html>
