@@ -106,24 +106,16 @@ nav a:hover {
   line-height: .7;
 }
 
-.slider{
-  text-align:left;
-  margin: 0% 10%;
-  }
-
-.slide {
-  padding: 2%;
-}
-
-.slide p {
-  font-weight: 300;
-  font-size:.8em;
-  line-height: 1;
-}
-
-.slide h3 {
-  font-weight: 400;
-  font-size: 1em;
+#owl-demo .item{
+  background: #a1def8;
+  padding: 30px 0px;
+  display: block;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
 }
 
 
